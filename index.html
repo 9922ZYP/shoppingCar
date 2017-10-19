@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="Content/css/font-awesome.min.css"/>
+    <link type="text/css" rel="stylesheet" href="Content/css/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" href="Content/css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="Content/css/common.css"/>
+    <link type="text/css" rel="stylesheet" href="Content/css/style.css"/>
+</head>
+<body ng-app="myApp">
+  <header class="header">
+        <h1>购物车(28)</h1>
+        <a>编辑</a>
+  </header>
+    <section class="section">
+        <ui-view></ui-view>
+    </section>
+    <footer class="footer">
+        <div class="footer-one">
+            <div class="footer-one-left">
+                <div class="footer-one-left-check">
+                    <input type="checkbox"
+                           id="radio1">
+                    <label for="radio1">
+                        <i class="fa fa-check"></i>
+                    </label>
+                    <a>全选</a>
+                </div>
+                <div class="footer-one-left-total">
+                    <a>合计:</a>
+                    <a>￥0</a>
+                </div>
+            </div>
+            <div class="footer-one-right">
+                <button>结算（0）</button>
+            </div>
+        </div>
+        <div class="footer-two">
+            <ul>
+                <li class="text-center">
+                    <i class="fa fa-home"></i>
+                    <br>
+                    <span>首页</span>
+                </li>
+                <li class="text-center">
+                    <i class="fa fa-home"></i>
+                    <br>
+                    <span>首页</span>
+                </li>
+                <li class="text-center">
+                    <i class="fa fa-home"></i>
+                    <br>
+                    <span>首页</span>
+                </li>
+                <li class="text-center bg">
+                    <i class="fa fa-shopping-cart"></i>
+                    <br>
+                    <span>首页</span>
+                </li>
+                <li class="text-center">
+                    <i class="fa fa-user"></i>
+                    <br>
+                    <span>首页</span>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="Script/angular/angular.js"></script>
+    <script type="text/javascript" src="Script/angular/angular-ui-router.js"></script>
+    <script type="text/javascript" src="App/app.js"></script>
+    <script src="App/Service/baseServer.js"></script>
+    <script type="text/javascript" src="App/Service/shoppingServer.js"></script>
+
+    <script type="text/javascript" src="App/Controller/shoppingController.js"></script>
+    <script src="App/Controller/shoppingItemController.js"></script>
+    <script type="text/javascript" src="App/Directive/shoppingDirective.js"></script>
+</body>
+</html>
